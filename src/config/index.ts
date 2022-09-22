@@ -17,3 +17,9 @@ export const cookieConfig = {
     name: `${process.env.COOKIE_NAME}`,
     expiration: parseInt(`${process.env.COOKIE_EXPIRATION}`),
 }
+
+export const swaggerConfig = {
+    user: `${process.env.SWAGGER_AUTH_USER}`,
+    password: `${process.env.SWAGGER_AUTH_PASSWORD}`,
+    realm: `${process.env.SWAGGER_AUTH_REALM}`,
+}
