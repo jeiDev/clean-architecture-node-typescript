@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6"
+    ],
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true, 
+    "emitDecoratorMetadata": true, 
+    "module": "commonjs", 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "strict": true, 
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false,
+    "strictPropertyInitialization": false,
+    "outDir": "build",
+    "baseUrl": "src",
+    "paths": {
+      "@interfaces": ["interfaces"],
+      "@interfaces/*": ["interfaces/*"],
+      "@config": ["config"],
+      "@config/*": ["config/*"],
+      "@helpers": ["helpers"],
+      "@helpers/*": ["helpers/*"],
+      "@middleware": ["middleware"],
+      "@middleware/*": ["middleware/*"],
+      "@providers": ["providers"],
+      "@providers/*": ["providers/*"],
+      "@routers": ["routers"],
+      "@routers/*": ["routers/*"],
+      "@settings": ["settings"],
+      "@settings/*": ["settings/*"],
+      "@controllers": ["controllers"],
+      "@controllers/*": ["controllers/*"],
+      "@database": ["database"],
+      "@database/*": ["database/*"],
+      "@prototypes": ["prototypes"],
+      "@prototypes/*": ["prototypes/*"],
+      "@core": ["core"],
+      "@core/*": ["core/*"],
+    }
+  },
+  "ts-node": {
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
+  "exclude": [
+    "node_modules", "build"
+  ],
+  "include": [
+    "src", "global.d.ts"  , "*.yaml"
+  ]
+}
