@@ -4,6 +4,5 @@ export enum DatabaseNameEnum {
 }
 
 export enum DatabaseSchemaEnum {
-    PUBLIC = 'public',
-    ADMIN = 'admin'
+    PUBLIC = 'public'
 }

@@ -32,5 +32,5 @@ export interface DefaultDBI {
 }
 
 export interface ConnectionsDBI {
-    default: DataSource
+    base: DataSource
 }

@@ -4,7 +4,7 @@ import { ConnectionsDBI } from "@interfaces/database/database.interface";
 import databaseConfig from "@config/database";
 
 export const connections: ConnectionsDBI = {
-    default: new DataSource(databaseConfig.default as PostgresConnectionOptions)
+    base: new DataSource(databaseConfig.base as PostgresConnectionOptions)
 };
 
 export const createDataSourceConnections = () => {
@@ -39,4 +39,4 @@ export const createDataSourceConnections = () => {
    
 };
 
-export default connections.default;
+export default connections.base;
