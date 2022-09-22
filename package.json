@@ -20,9 +20,13 @@
     "express-session": "^1.17.3",
     "express-session-sqlite": "^2.1.1",
     "helmet": "^6.0.0",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.1.1",
     "swagger-jsdoc": "^6.2.5",
-    "swagger-ui-express": "^4.5.0"
+    "swagger-ui-express": "^4.5.0",
+    "typeorm": "^0.3.7",
+    "typeorm-seeding": "^1.6.1"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.3",

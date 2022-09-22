@@ -1,5 +1,5 @@
-export default () => {
-    return {
-        error: false
-    }
+import database from "./database";
+
+export default async () => {
+    await database();
 }

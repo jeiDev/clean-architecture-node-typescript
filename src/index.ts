@@ -8,11 +8,7 @@ import app from "./app";
 const PORT = serverConfig.port;
 
 async function root() {
-    const manage = await core();
-
-    if(manage && manage.error){
-        throw manage.error;
-    }
+    await core();
     
     const server = http.createServer(app);
     
