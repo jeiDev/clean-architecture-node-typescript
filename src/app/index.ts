@@ -9,9 +9,9 @@ import cookie from "./cookie";
 import docs from "./docs";
 
 const app = express();
-const isProd = serverConfig.isProd;
+const isLive = serverConfig.isLive;
 
-if (isProd) {
+if (isLive) {
     app.set('trust proxy', 1);
 }
 
