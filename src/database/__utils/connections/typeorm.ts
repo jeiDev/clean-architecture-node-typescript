@@ -2,8 +2,7 @@ import { DataSource } from "typeorm";
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
 import databaseConfig from "@config/database/typeorm";
 
-
-export const connection = new DataSource(databaseConfig as PostgresConnectionOptions)
+const connection = new DataSource(databaseConfig as PostgresConnectionOptions)
 
 export const createDataSourceConnections = () => {
     return new Promise(async(resolve) => {

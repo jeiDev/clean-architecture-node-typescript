@@ -25,24 +25,24 @@ export default {
       },
     },
     entities: [
-      path.join(__dirname, "/../../database/db/**/entities/**/**/*.entity.{ts,js}"),
-      path.join(__dirname, "/../../database/db/**/entities/**/**/*.view.{ts,js}"),
+      path.join(__dirname, "/../../../database/**/infrastructure/typeorm/*.entity.{ts,js}"),
+      path.join(__dirname, "/../../../database/**/infrastructure/typeorm/*.view.{ts,js}"),
     ],
     migrations: [
-      path.join(__dirname, "/../../database/db/**/migrations/**/*.migration.{ts,js}")
+      path.join(__dirname, "/../../../database/__migrations/typeorm/*.migration.{ts,js}")
     ],
     seeds: [
-      path.join(__dirname, "/../../database/db/**/seeding/**/seeds/*.seed.{ts,js}"),
+      path.join(__dirname, "/../../../database/__seeds/typeorm/*.seed.{ts,js}"),
     ],
     factories: [
-      path.join(__dirname, "/../../database/db/**/seeding/**/factories/*.factory.{ts,js}"),
+      path.join(__dirname, "/../../../database/__seeds/typeorm/*.factory.{ts,js}"),
     ],
     subscribers: [
-      path.join(__dirname, "/../../database/db/**/subscribers/**/*.subcribe.{ts,js}")
+      path.join(__dirname, "/../../../database/__subscribers/typeorm/*.subcribe.{ts,js}")
     ],
     cli: {
-      entitiesDir: path.join(__dirname, "/../../database/db/**/entities"),
-      migrationsDir: path.join(__dirname, "/../../database/db/**/migrations"),
-      subscribersDir: path.join(__dirname, "/../../database/db/**/subscribers")
+      entitiesDir: path.join(__dirname, "/../../../database/**/infrastructure/typeorm"),
+      migrationsDir: path.join(__dirname, "/../../../database/__migrations/typeorm"),
+      subscribersDir: path.join(__dirname, "/../../../database/__subscribers/typeorm")
     }
 }
