@@ -23,3 +23,7 @@ export const swaggerConfig = {
     password: `${process.env.SWAGGER_AUTH_PASSWORD}`,
     realm: `${process.env.SWAGGER_AUTH_REALM}`,
 }
+
+export const databaseConfig = {
+    provider: `${process.env.DATABASE_PROVIDER}`
+}
