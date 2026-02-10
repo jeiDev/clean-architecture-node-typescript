@@ -20,6 +20,10 @@
   "keywords": [],
   "author": "JeiDevp",
   "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "class-transformer": "^0.5.1",
